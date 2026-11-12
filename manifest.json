@@ -1,0 +1,15 @@
+{
+  "version": 0,
+  "require": { "cockpit": "137" },
+  "content-security-policy": "default-src 'self'; connect-src 'self' ws: wss: https://api.ipify.org https://api64.ipify.org https://www.cloudflare.com; img-src 'self' data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'",
+  "tools": {
+    "firewall-manager": {
+      "label": "Firewall",
+      "path": "index.html",
+      "order": 25,
+      "keywords": [
+        { "matches": ["firewall", "ufw", "firewalld", "nftables", "nft", "ports", "rules", "iptables"] }
+      ]
+    }
+  }
+}
